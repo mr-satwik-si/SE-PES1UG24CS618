@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="lab3" name="Lab 3 Component Diagram">
+    <mxGraphModel dx="1413" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=18;align=center;" value="Patient Health Record Consent Management System&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;UML Component Diagram — Layered Architecture&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="660" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="presentation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="PRESENTATION LAYER" vertex="1">
+          <mxGeometry height="150" width="1080" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="business" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="BUSINESS LAYER" vertex="1">
+          <mxGeometry height="240" width="1080" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;" value="DATA LAYER" vertex="1">
+          <mxGeometry height="170" width="1080" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="shape=mxgraph.uml.component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Patient &amp; Provider Interface&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="300" x="430" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="shape=mxgraph.uml.component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Consent Management&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="250" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="shape=mxgraph.uml.component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Doctor Authorization&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="250" x="415" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="shape=mxgraph.uml.component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Health Record Access&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="250" x="730" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="shape=mxgraph.uml.component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;&lt;component&gt;&gt;&lt;br&gt;&lt;b&gt;Data &amp; Audit Storage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="300" x="465" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" parent="1" style="shape=umlActor;html=1;verticalAlign=bottom;align=center;" value="Patient" vertex="1">
+          <mxGeometry height="70" width="40" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="shape=umlActor;html=1;verticalAlign=bottom;align=center;" value="&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;consulting doctor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="30" x="980" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=umlActor;html=1;verticalAlign=bottom;align=center;" value="Clinic Administrator" vertex="1">
+          <mxGeometry height="70" width="40" x="1010" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=9;" target="c2" value="◯ Consent Management Interface )">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=9;" target="c3" value="◯ Doctor Verification Interface )">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=9;" value=") Consent Validation Interface ◯">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="730" y="360" as="sourcePoint" />
+            <mxPoint x="350" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=9;" target="c5" value="◯ Health Record Interface )">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=9;" target="c5" value="◯ Audit Logging Interface )">
+          <mxGeometry relative="1" x="-0.0002" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="615" y="370.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;fontSize=8;" value="interacts">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="144.5" as="sourcePoint" />
+            <mxPoint x="430" y="144.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;fontSize=8;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;interacts&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="975" y="144.5" as="sourcePoint" />
+            <mxPoint x="735" y="144.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" style="dashed=1;endArrow=open;html=1;fontSize=8;" value="manages verification">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="462.5825" as="sourcePoint" />
+            <mxPoint x="665" y="405.004375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;align=center;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Interface labels: API calls / authorization checks / database queries / audit logging&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="650" x="260" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="Q47XP4CWa0gxk4nSFWQb-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;i&gt;&lt;u&gt;NAME: SATWIK SHREESHAIL INCHAGERI&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;SRN: PES1UG24CS618&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;SECTION: K&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;PROJECT NO:13&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="310" y="767" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
