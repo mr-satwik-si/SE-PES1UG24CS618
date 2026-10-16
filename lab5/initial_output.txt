@@ -1,0 +1,7 @@
+Slot length for second reservation: 2
+Cancellation of missing reservation: False
+Slot for Board-2, like 10-12 (Enter for 10-12): 2
+2026-10-16 09:17:22,961 Board-1 double-booked at 09-11
+Equipment left: {'projector': 1, 'microphone': 4, 'webcam': 0}
+Reservations: {1: {'room': 'Board-1', 'slot': '09-11', 'equipment': []}, 2: {'room': 'Board-1', 'slot': '09-11', 'equipment': []}, 3: {'room': 'Huddle-3', 'slot': '10-12', 'equipment': []}, 4: {'room': 'Board-2', 'slot': '2', 'equipment': ['projector', 'webcam']}}
+First reservation ID: 1
